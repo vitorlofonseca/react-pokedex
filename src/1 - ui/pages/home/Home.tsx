@@ -1,5 +1,5 @@
 import React from "react";
-import { Topbar } from "../../components/topbar/Topbar";
+import { Topbar } from "../../Components/Topbar/Topbar";
 import "./Home.scss";
 
 class Home extends React.Component {

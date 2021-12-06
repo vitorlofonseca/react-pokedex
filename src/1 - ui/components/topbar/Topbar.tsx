@@ -5,7 +5,15 @@ export class Topbar extends Component {
   static propTypes = {};
 
   render() {
-    return <div className="c-topbar">test</div>;
+    return (
+      <div className="c-topbar">
+        <img
+          className="c-logo"
+          src={process.env.PUBLIC_URL + "images/logo.png"}
+          alt="PokeWiki logo"
+        />
+      </div>
+    );
   }
 }
 

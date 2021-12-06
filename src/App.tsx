@@ -1,4 +1,4 @@
-import { Home } from "./1 - ui/pages/home/Home";
+import { Home } from "./1 - ui/Pages/Home/Home";
 import "./App.scss";
 
 function App() {

@@ -1,4 +1,15 @@
+@import "../../PublicStyles/DesignSystem.scss";
+
 .c-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border: solid;
+  height: 83px;
+  background-color: $primary-lighter-2;
+}
+
+.c-logo {
+  width: 176px;
+  height: 53px;
 }
