@@ -26,7 +26,7 @@
     line-height: 28px;
 
     white-space: nowrap;
-    width: 100%;
+    width: 80%;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -37,9 +37,15 @@
     text-transform: capitalize;
 
     white-space: nowrap;
-    width: 100%;
+    width: 80%;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  &:hover {
+    background: rgba($primary-lighter-2, 0.6);
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   }
 }
