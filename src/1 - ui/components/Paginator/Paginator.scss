@@ -1,7 +1,7 @@
 @import "../../PublicStyles/DesignSystem.scss";
 
 .c-pagination-container {
-  margin: 50px 0;
+  margin-top: 50px;
   margin-right: 20px;
   display: flex;
   justify-content: flex-end;
@@ -24,12 +24,20 @@
   }
 
   .c-last-page,
-  .c-next-page {
+  .c-next-page,
+  .c-first-page,
+  .c-previous-page {
     font-size: 1.3rem;
     color: $primary-darker-2;
     cursor: pointer;
   }
+
   .c-next-page {
+    margin-right: 20px;
+  }
+
+  .c-first-page,
+  .c-previous-page {
     margin-right: 20px;
   }
 }

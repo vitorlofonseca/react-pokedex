@@ -1,5 +1,4 @@
 import React from "react";
-import Loader from "react-loader-spinner";
 import PokemonService from "../../../2 - infrastructure/http/Pokemon/Pokemon.service";
 import { Pokemon } from "../../../3 - model/Entities/Pokemon";
 import { Paginator } from "../../Components/Paginator/Paginator";
@@ -66,8 +65,10 @@ class Home extends React.Component<{}, HomeState> {
           ) : (
             <PokemonList pokemons={pokemonList} />
           )}
-
-          <Paginator selectedPage={1} onChangePage={this.onChangePage} />
+          <Paginator
+            onChangePage={this.onChangePage}
+            selectedPageIsLastOne={pokemonList.length < 20}
+          />
         </div>
       </div>
     );
