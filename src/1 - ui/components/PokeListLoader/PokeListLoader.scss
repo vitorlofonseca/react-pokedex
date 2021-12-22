@@ -1,0 +1,15 @@
+@import "../../PublicStyles/DesignSystem.scss";
+.c-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+
+  svg {
+    height: 15rem;
+    stroke: $primary;
+    width: 100%;
+    max-width: 1200px;
+  }
+}

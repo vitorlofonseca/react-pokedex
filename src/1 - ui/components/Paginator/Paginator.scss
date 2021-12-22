@@ -1,0 +1,35 @@
+@import "../../PublicStyles/DesignSystem.scss";
+
+.c-pagination-container {
+  margin: 50px 0;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .c-page-selector {
+    font-size: 1.3rem;
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--selected {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+
+  .c-last-page,
+  .c-next-page {
+    font-size: 1.3rem;
+    color: $primary-darker-2;
+    cursor: pointer;
+  }
+  .c-next-page {
+    margin-right: 20px;
+  }
+}

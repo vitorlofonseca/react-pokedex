@@ -2,9 +2,12 @@ import { Pokemon } from "../../../3 - model/Entities/Pokemon";
 import { PokemonsListPreviewDto } from "./PokemonsListPreview.dto";
 
 export default class PokemonService {
-  public static async getPokemons(): Promise<Pokemon[]> {
+  public static async getPokemons(
+    offset: number,
+    limit: number = 20
+  ): Promise<Pokemon[]> {
     const pokemonsListPreview = await fetch(
-      "https://pokeapi.co/api/v2/pokemon"
+      `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
     );
     const resPokemonsListPreview = await pokemonsListPreview
       .json()
