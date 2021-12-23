@@ -11,7 +11,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   width: 18.4%;
-  height: 253px;
+  max-height: 253px;
+  height: 20vw;
 
   &__logo {
     width: 70%;
@@ -30,6 +31,10 @@
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: 1.2rem;
+    }
   }
 
   &__abilities {
@@ -41,6 +46,10 @@
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (max-width: $breakpoint-lg) {
+      display: none;
+    }
   }
 
   &:hover {

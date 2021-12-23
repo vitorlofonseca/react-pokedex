@@ -1,0 +1,70 @@
+@import "../../PublicStyles/DesignSystem.scss";
+
+.c-pokemon-list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  width: 93%;
+  height: 64px;
+
+  background: $white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  max-height: 253px;
+  border: 1px solid $grey-lighter-2;
+
+  &__logo {
+    width: 9%;
+    padding: 10px;
+  }
+
+  &__name {
+    padding: 0 10px;
+    text-transform: capitalize;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 24px;
+
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__abilities {
+    padding: 0 10px;
+    text-transform: capitalize;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 14px;
+    color: $grey;
+  }
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &:hover {
+    background: rgba($primary-lighter-2, 0.6);
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .c-open-pokemon-btn {
+    font-size: 2rem;
+    color: $grey;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
