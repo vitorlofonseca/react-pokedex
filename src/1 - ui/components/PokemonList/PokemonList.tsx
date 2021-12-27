@@ -1,7 +1,7 @@
 import React from "react";
 import { Pokemon } from "../../../3 - model/Entities/Pokemon";
-import { PokemonCard } from "../PokemonCard/PokemonCard";
-import { PokemonListItem } from "../PokemonListItem/PokemonListItem";
+import PokemonCard from "../PokemonCard/PokemonCard";
+import PokemonListItem from "../PokemonListItem/PokemonListItem";
 import "./PokemonList.scss";
 
 type Props = {
